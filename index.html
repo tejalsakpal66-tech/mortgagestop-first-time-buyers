@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MortgageStop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,700..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">
+      <svg width="26" height="30" viewBox="0 0 26 30" fill="none"><path d="M13 1C6.4 1 1 6.2 1 12.6 1 21 13 29 13 29s12-8 12-16.4C25 6.2 19.6 1 13 1Z" stroke="currentColor" stroke-width="2.2"/><path d="M8 13.5 13 9l5 4.5V18H8v-4.5Z" fill="var(--violet)"/></svg>
+      <b>Mortgage<span>Stop</span><i>.</i></b>
+    </a>
+    <button class="icon-btn" id="theme" aria-label="Toggle theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <a href="#borrow" class="nav-link hide-m">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+      How much can I borrow?
+    </a>
+    <a href="#quiz" class="btn btn-ghost btn-sm hide-s">Apply Now</a>
+    <a href="#faq" class="btn btn-teal btn-sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      Get Help
+    </a>
+    <button class="icon-btn" id="burger" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="menu" id="menu">
+  <a href="first-time-buyers.html">First-Time Buyer Hub</a><a href="#platform">Platform</a><a href="#process">Process</a><a href="#goals">Goals</a>
+  <a href="#rewards">Rewards</a><a href="#resources">Resources</a><a href="#faq">FAQ</a><a href="#insights">Insights</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Home Loans, Sorted.</h1>
+    <p>A mortgage journey rebuilt from the ground up — transparent, quick, and guided by you at every step.</p>
+    <div class="ctas">
+      <a href="#quiz" class="btn btn-teal">Check Eligibility
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      <a href="#" class="btn btn-ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+        Ask the Assistant</a>
+    </div>
+    <div class="trust">
+      <div class="avatars"><span></span><span></span><span></span><span></span></div>
+      <div style="text-align:left">Thousands of homeowners<br>already on board</div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Sample rates">
+  <div class="track" id="ticker"></div>
+</div>
+
+<section id="platform">
+  <div class="wrap features">
+    <div class="reveal">
+      <div class="eyebrow">/ Platform</div>
+      <h2>A better way<br>to <em>borrow.</em></h2>
+      <p class="lead">Modern tooling that takes the paperwork, waiting and guesswork out of getting a mortgage.</p>
+    </div>
+    <div class="feat-list reveal">
+      <div class="feat active"><h3><small>1</small>One Dashboard</h3><div class="body"><div>
+        <p>Apply, share documents, pick a solicitor, follow each milestone and chat with your team — all from a single secure workspace.</p><a href="#">See the platform →</a></div></div></div>
+      <div class="feat"><h3><small>2</small>Built for Speed</h3><div class="body"><div>
+        <p>Automated document checks and pre-filled applications mean decisions in days rather than weeks.</p><a href="#">How we do it →</a></div></div></div>
+      <div class="feat"><h3><small>3</small>Easier Conveyancing</h3><div class="body"><div>
+        <p>Compare solicitor quotes side by side and keep the legal steps moving without chasing anyone.</p><a href="#">Learn more →</a></div></div></div>
+      <div class="feat"><h3><small>4</small>Rewards That Stack</h3><div class="body"><div>
+        <p>Move quickly and share us with friends to unlock vouchers when your loan draws down.</p><a href="#rewards">View rewards →</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">/ Process</div>
+      <h2>Weeks of waiting?<br><em>Not here.</em></h2>
+    </div>
+    <div class="steps" id="borrow">
+      <div class="step reveal"><span class="n">01 / 03</span><span class="time">5 Mins</span>
+        <h3>See what you could borrow</h3>
+        <p>Answer a short set of questions about your income and outgoings for a tailored, indicative figure — plus tips to raise it if you're not quite there yet.</p></div>
+      <div class="step reveal"><span class="n">02 / 03</span><span class="time">25 Mins</span>
+        <h3>Back it up with documents</h3>
+        <p>Upload payslips and statements securely. We review and verify everything quickly so lenders get a complete, accurate file.</p></div>
+      <div class="step reveal"><span class="n">03 / 03</span><span class="time">1 Hour</span>
+        <h3>Talk it through with an advisor</h3>
+        <p>Book a session with an advisor who compares lender criteria and recommends the product that fits your situation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">/ Your goal</div>
+      <h2>Where are you<br><em>headed?</em></h2>
+      <p class="lead">Pick your route and we'll handle the rest.</p>
+    </div>
+    <div class="goals">
+      <a href="first-time-buyers.html" class="goal reveal">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10 12 3l9 7v11H3z"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Buy a Home</h3><p>A single application and one clear path to your keys.</p></a>
+      <a href="#" class="goal reveal">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>
+        <h3>Switch &amp; Save</h3><p>Move to a better rate and trim your monthly repayments.</p></a>
+      <a href="#" class="goal reveal">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M15 9.5a3 3 0 0 0-3-1.5c-1.7 0-3 1-3 2.2 0 2.8 6 1.4 6 4.3 0 1.2-1.3 2.3-3 2.3a3 3 0 0 1-3-1.6M12 6v2M12 16v2"/></svg>
+        <h3>Release Equity</h3><p>Free up funds for renovations, investments or what's next.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="rewards" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">/ Rewards</div>
+      <h2>Everyone gets<br><em>rewarded.</em></h2>
+      <p class="lead">Finish your part of the application promptly and we'll say thanks.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-tab="t1">The Rewards</button>
+      <button data-tab="t2">How It Works</button>
+      <button data-tab="t3">Get Ready</button>
+    </div>
+    <div class="tabpane on" id="t1">
+      <div class="rewards">
+        <div class="reward"><div class="top"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><span class="pill">Up to €100</span></div>
+          <h3>Fast-Finisher Bonus</h3><p>Complete every section and upload all documents within two days to earn the top bonus, or within three days for half.</p><a href="#">Details →</a></div>
+        <div class="reward"><div class="top"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div><span class="pill">€150 each</span></div>
+          <h3>Bring a Friend</h3><p>Share your personal link. Each friend whose mortgage completes earns you a reward — there's no cap.</p><a href="#">Details →</a></div>
+        <div class="reward"><div class="top"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div><span class="pill">€250+</span></div>
+          <h3>Combine Them</h3><p>Pair the bonus with a referral to multiply what you earn. Vouchers are issued after drawdown.</p><a href="#">Details →</a></div>
+      </div>
+    </div>
+    <div class="tabpane" id="t2">
+      <ol class="howlist">
+        <li><b>1</b>Sign up and get your unique referral link straight away.</li>
+        <li><b>2</b>Complete your application within the bonus window.</li>
+        <li><b>3</b>Your loan draws down and your voucher lands in your inbox.</li>
+      </ol>
+    </div>
+    <div class="tabpane" id="t3">
+      <ol class="howlist">
+        <li><b>✓</b>Recent payslips and an employment detail summary.</li>
+        <li><b>✓</b>Six months of current account statements.</li>
+        <li><b>✓</b>Photo ID and proof of address.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">/ Resources</div>
+      <h2>Tools &amp; <em>Guides</em></h2>
+      <p class="lead">Practical resources for making confident mortgage decisions.</p>
+    </div>
+    <div class="res">
+      <a href="#" class="reveal"><div class="hd"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/></svg></div><h3>Calculators</h3></div><p>Run the numbers on repayments and borrowing.</p><span>Open →</span></a>
+      <a href="#" class="reveal"><div class="hd"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 17 6-6 4 4 8-8M14 7h7v7"/></svg></div><h3>Rate Watch</h3></div><p>Track rate movements and what they mean for you.</p><span>Open →</span></a>
+      <a href="first-time-buyers.html" class="reveal"><div class="hd"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10 12 3l9 7v11H3z"/></svg></div><h3>First-Time Buyer Hub</h3></div><p>From viewing to keys, step by step.</p><span>Open →</span></a>
+      <a href="#" class="reveal"><div class="hd"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5"/></svg></div><h3>Switching</h3></div><p>When and how moving lender pays off.</p><span>Open →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="factors" style="background:var(--bg2)">
+  <div class="wrap head reveal">
+    <h2>What shapes your<br><em>borrowing power?</em></h2>
+    <a href="#" class="btn btn-ghost btn-sm">All factors →</a>
+  </div>
+  <div class="ftrack" id="factors"></div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <div class="reveal">
+      <div class="eyebrow">/ Questions</div>
+      <h2>Questions?<br><em>Answered.</em></h2>
+      <p class="lead">The things people ask us most about getting a mortgage.</p>
+      <p class="lead" style="margin-top:40px">Can't find what you need?</p>
+      <a href="#" class="btn btn-teal" style="margin-top:16px">Speak to an Advisor</a>
+    </div>
+    <div class="reveal" id="qas">
+      <div class="qa open"><button><small>01</small>How long does approval in principle take?</button><div class="ans"><p>Once your application and documents are complete, most people receive approval in principle within a few working days. We flag anything missing before submission to avoid delays.</p></div></div>
+      <div class="qa"><button><small>02</small>What lending limits apply?</button><div class="ans"><p>Lenders follow central bank rules that cap borrowing as a multiple of income and set minimum deposit levels. Your advisor will explain exactly how these apply to you.</p></div></div>
+      <div class="qa"><button><small>03</small>How do your rates compare?</button><div class="ans"><p>We compare offers across the lenders we work with so you can see the options side by side and choose with confidence.</p></div></div>
+      <div class="qa"><button><small>04</small>Do you handle self-build and new-build?</button><div class="ans"><p>Yes. Both have staged drawdowns and extra paperwork, and we'll guide you through each stage.</p></div></div>
+      <div class="qa"><button><small>05</small>How is my data protected?</button><div class="ans"><p>Documents are encrypted in transit and at rest, and access is limited to the people working on your application.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">/ Why us</div>
+      <h2>Why<br><em>MortgageStop?</em></h2>
+    </div>
+    <div class="whygrid">
+      <div class="card reveal"><h3>No Fees</h3><p>Our service costs you nothing — lenders pay us when your mortgage completes.</p></div>
+      <div class="card reveal"><h3>Real Rewards</h3><p>We reward speed and referrals, so being organised actually pays.</p></div>
+      <div class="card reveal"><h3>Simple by Design</h3><p>Built from scratch around clarity, so you always know what's next.</p></div>
+    </div>
+    <div class="founder reveal">
+      <div class="ph"></div>
+      <div><small>FOUNDER</small><h3>Your Founder Name</h3>
+        <p>Add a short bio here describing the founder's background and the experience they bring to guiding customers through major financial decisions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="revhead reveal">
+      <h2>What our<br><em>customers say</em></h2>
+      <div class="score"><b>4.8</b><div><div class="stars">★★★★★</div><small style="color:var(--muted)">Sample rating · replace with real data</small></div></div>
+    </div>
+    <div class="revs" id="revs"></div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="wrap reveal">
+    <div class="eyebrow">Our Mission</div>
+    <h2>Financial advice that's <em>actually accessible.</em></h2>
+    <p class="lead">Helping people make better money decisions and feel good about them.</p>
+    <p class="big">Mortgages are just the beginning.</p>
+  </div>
+</section>
+
+<section id="insights">
+  <div class="wrap">
+    <div class="revhead reveal">
+      <div><div class="eyebrow">/ Insights</div><h2>Latest Insights<br><em>&amp; Advice.</em></h2></div>
+      <a href="#" class="btn btn-ghost btn-sm">All articles →</a>
+    </div>
+    <div class="ins">
+      <a href="first-time-buyers.html" class="post feature reveal"><div class="img"></div><span class="tag">FIRST-TIME BUYERS</span><h3>Seven Mistakes First-Time Buyers Make</h3><p>Buying your first home is exciting — and full of easy-to-miss pitfalls. Here's how to sidestep the common ones.</p><span class="meta">Advisor Team · 5 min read</span></a>
+      <a href="#" class="post reveal"><span class="tag">MARKET</span><h3>Deposit Rules Explained in Plain English</h3><span class="meta">7 min read</span></a>
+      <a href="#" class="post reveal"><span class="tag">PROTECTION</span><h3>A Quick Guide to Mortgage Protection Cover</h3><span class="meta">5 min read</span></a>
+      <a href="#" class="post reveal"><span class="tag">SWITCHING</span><h3>Could Switching Lender Save You Thousands?</h3><span class="meta">5 min read</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta reveal" id="quiz">
+  <div class="eyebrow" style="color:#000">Quick &amp; Easy</div>
+  <h2>Try our 4-minute<br>eligibility quiz</h2>
+  <p>See how much you could borrow with each lender.</p>
+  <a href="#" class="btn">Start the Quiz →</a>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><a href="#" class="logo" style="color:var(--text);font-size:22px">Mortgage<span style="color:var(--violet)">Stop</span>.</a><p style="margin-top:12px;max-width:300px">Mortgages made clear, quick and rewarding.</p></div>
+      <div><h3 class="fh">Services</h3><a href="first-time-buyers.html">First-Time Buyers</a><a href="#">Buy a Home</a><a href="#">Switch</a><a href="#">Equity Release</a></div>
+      <div><h3 class="fh">Resources</h3><a href="#">Calculators</a><a href="#">Rate Watch</a><a href="#">Insights</a></div>
+      <div><h3 class="fh">Company</h3><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="legal">© <span id="yr"></span> MortgageStop. Demo site — rates and figures shown are illustrative only.</div>
+  </div>
+</footer>
+
+<a href="#" class="ai"><b>Ask the Assistant</b><span>›</span></a>
+
+<script src="script.js"></script>
+</body>
+</html>
