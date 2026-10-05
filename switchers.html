@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -864,10 +864,9 @@ document.getElementById("burger").onclick=()=>menu.classList.toggle("open");
 menu.querySelectorAll("a").forEach(a=>a.onclick=()=>menu.classList.remove("open"));
 // theme
 const root=document.documentElement;
-try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+// always open in light mode; the toggle switches for this visit only
 document.getElementById("theme").onclick=()=>{
   root.dataset.theme=root.dataset.theme==="light"?"dark":"light";
-  try{localStorage.setItem("theme",root.dataset.theme)}catch(e){}
 };
 // reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
