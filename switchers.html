@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>First-Time Buyer Hub</title>
+<title>Switch Your Mortgage</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,700..800&display=swap" rel="stylesheet">
 <style>
@@ -541,6 +541,9 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
 .pb-dot{width:8px;height:8px;border-radius:50%;background:var(--accent2)}
 @media (max-width:1024px){.path-media{aspect-ratio:4/3}}
 @media (max-width:560px){.path-list{grid-template-columns:minmax(0,1fr);gap:14px}}
+.cf-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:560px){.cf-pair{grid-template-columns:minmax(0,1fr)}}
+.quiz-copy h2 em{display:block}
 
 /* quiz band: centred layout on tablet and phone */
 @media (max-width:900px){
@@ -567,7 +570,7 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
     </button>
     <a href="#calc" class="nav-link hide-m">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
-      How much can I borrow?
+      How much could I save?
     </a>
     <a href="#quiz" class="btn btn-ghost btn-sm hide-s">Apply Now</a>
     <a href="#calc" class="btn btn-teal btn-sm" aria-label="Get help">
@@ -580,17 +583,17 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
   </div>
 </nav>
 <div class="menu" id="menu">
-  <a href="#calc">Calculator</a><a href="#path">Why It's Easier</a><a href="#journey">Next Steps</a><a href="#quiz">Get Started</a>
+  <a href="#calc">Savings calculator</a><a href="#path">Why switch with us</a><a href="#journey">Steps</a><a href="#faq">FAQ</a><a href="#quiz">Get started</a>
 </div>
 
 <header class="hero">
-  <img class="hero-photo" src="https://images.unsplash.com/photo-1758523417356-3171f06a32b6?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" srcset="https://images.unsplash.com/photo-1758523417356-3171f06a32b6?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w, https://images.unsplash.com/photo-1758523417356-3171f06a32b6?auto=format&amp;fit=crop&amp;q=70&amp;w=1280 1280w, https://images.unsplash.com/photo-1758523417356-3171f06a32b6?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w, https://images.unsplash.com/photo-1758523417356-3171f06a32b6?auto=format&amp;fit=crop&amp;q=70&amp;w=2560 2560w" sizes="100vw" alt="A smiling young couple sitting together in their kitchen" fetchpriority="high" decoding="async">
+  <img class="hero-photo" src="https://images.unsplash.com/photo-1758686254493-7b3e49a8f325?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" srcset="https://images.unsplash.com/photo-1758686254493-7b3e49a8f325?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w, https://images.unsplash.com/photo-1758686254493-7b3e49a8f325?auto=format&amp;fit=crop&amp;q=70&amp;w=1280 1280w, https://images.unsplash.com/photo-1758686254493-7b3e49a8f325?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w, https://images.unsplash.com/photo-1758686254493-7b3e49a8f325?auto=format&amp;fit=crop&amp;q=70&amp;w=2560 2560w" sizes="100vw" alt="An older couple smiling as they look at a laptop together at home" fetchpriority="high" decoding="async">
   <div class="wrap">
-    <h1>See what you could borrow in 5&nbsp;minutes.</h1>
-    <p>Compare lenders and get expert guidance, all in one place.</p>
+    <h1>See what switching could save&nbsp;you.</h1>
+    <p>Check your savings in under 5 minutes, with no obligation.</p>
     <div class="ctas">
-      <a href="#calc" class="btn btn-teal">Check my eligibility
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#calc" class="btn btn-teal">Check my savings
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a href="tel:+353879646952" class="btn btn-ghost">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18M8 14h2M14 14h2M8 17.5h2"/></svg>
         Book a call</a>
@@ -601,61 +604,67 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
 <section id="calc">
   <div class="wrap">
     <div class="calc-head reveal">
-      <h2>Your mortgage options in <em>4&nbsp;minutes.</em></h2>
-      <p class="lead">Adjust the numbers and see what you could borrow, instantly.</p>
+      <h2>What could you <em>save by switching?</em></h2>
+      <p class="lead">Enter your current mortgage details and see an estimate, instantly.</p>
     </div>
     <div class="calc2 reveal">
-      <form id="calcForm" class="calc2-in" novalidate>
+      <form id="switchForm" class="calc2-in" novalidate>
         <div class="cf">
-          <label for="income">Combined annual income</label>
-          <div class="field"><span>€</span><input id="income" inputmode="numeric" value="90,000" autocomplete="off"></div>
+          <label for="balance">Mortgage balance remaining</label>
+          <div class="field"><span>€</span><input id="balance" inputmode="numeric" value="300,000" autocomplete="off"></div>
+        </div>
+        <div class="cf-pair">
+          <div class="cf">
+            <label for="curRate">Your current rate</label>
+            <div class="field"><input id="curRate" inputmode="decimal" value="4.25" autocomplete="off"><span>%</span></div>
+          </div>
+          <div class="cf">
+            <label for="newRate">Rate you could switch to</label>
+            <div class="field"><input id="newRate" inputmode="decimal" value="3.50" autocomplete="off"><span>%</span></div>
+          </div>
         </div>
         <div class="cf">
-          <label for="deposit">Deposit saved</label>
-          <div class="field"><span>€</span><input id="deposit" inputmode="numeric" value="40,000" autocomplete="off"></div>
-        </div>
-        <div class="cf">
-          <div class="cf-row"><label for="term">Mortgage term</label><output id="termOut" for="term">30 yrs</output></div>
-          <input id="term" class="range" type="range" min="10" max="35" value="30">
-          <div class="cf-scale" aria-hidden="true"><span>10 yrs</span><span>35 yrs</span></div>
+          <div class="cf-row"><label for="years">Years remaining</label><output id="yearsOut" for="years">25 yrs</output></div>
+          <input id="years" class="range" type="range" min="5" max="35" value="25">
+          <div class="cf-scale" aria-hidden="true"><span>5 yrs</span><span>35 yrs</span></div>
         </div>
         <p class="cnote"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> This won't affect your credit score</p>
       </form>
       <div class="calc2-out" aria-live="polite">
-        <span class="co-label">You could borrow up to</span>
-        <strong id="rBorrow">€360,000</strong>
-        <span class="co-sub">Based on an estimated <span id="rMult">4</span>x income multiple</span>
+        <span class="co-label">You could save around</span>
+        <strong id="sMonthly">€0</strong>
+        <span class="co-sub">per month, based on the rates you entered</span>
         <dl class="co-stats">
-          <div><dt>Max property price</dt><dd id="rPrice">–</dd></div>
-          <div><dt>Est. monthly repayment</dt><dd id="rMonthly">–</dd></div>
+          <div><dt>Current repayment</dt><dd id="sCur">–</dd></div>
+          <div><dt>New repayment</dt><dd id="sNew">–</dd></div>
         </dl>
-        <p class="co-note" id="rNote"></p>
-        <a href="https://mortgagestop.ie/start-application" class="btn co-btn">Start my application <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="co-note" id="sNote"></p>
+        <a href="https://mortgagestop.ie/start-application" class="btn co-btn">Start my switch <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
-    <p class="calc-disclaimer">Figures are indicative only and subject to document verification and the lender's final decision.</p>
+    <p class="calc-disclaimer">Estimates only. Rates shown are examples, not offers. Your advisor will confirm real lender rates, and switching costs such as legal fees or a break fee may apply.</p>
   </div>
 </section>
 
 <section class="perks-sec">
   <div class="wrap">
-    <h2 class="sr-only">Why it's easier with MortgageStop</h2>
+    <h2 class="sr-only">Why switching is easier with MortgageStop</h2>
     <ul class="perks reveal">
       <li class="perk" style="--i:0">
-        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg></span><h3>Ready in hours</h3></div>
-        <p>A faster, simpler way to move forward with your first home.</p>
+        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg></span><h3>See likely lender options</h3></div>
+        <p>Find out which lenders you may be eligible for.</p>
       </li>
       <li class="perk" style="--i:1">
-        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><h3>4-min application</h3></div>
-        <p>Tell us a few details and we'll show you your options.</p>
+        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><h3>Estimate your savings</h3></div>
+        <p>See what you could save each month.</p>
       </li>
       <li class="perk" style="--i:2">
-        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Compare lenders</h3></div>
-        <p>See options side by side and choose with confidence.</p>
+        <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Track every step</h3></div>
+        <p>Know what happens next, from application to completion.</p>
       </li>
       <li class="perk" style="--i:3">
         <div class="perk-hd"><span class="perk-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"/></svg></span><h3>Expert help on hand</h3></div>
-        <p>Continue online or speak to an advisor for guidance.</p>
+        <p>Get support from an advisor at any stage.</p>
       </li>
     </ul>
   </div>
@@ -664,19 +673,19 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
 <section class="process path" id="path">
   <div class="wrap path-grid">
     <div class="path-copy reveal">
-      <h2>A clearer path to<br>your <em>first home.</em></h2>
-      <p class="lead">We take the complexity out of getting a mortgage so you can move forward with confidence.</p>
+      <h2>Everything you need to switch, <em>in one place.</em></h2>
+      <p class="lead">No back and forth with brokers or banks. Just clear options, transparent information and expert support.</p>
       <ul class="path-list">
-        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>See what you could borrow</li>
-        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Understand your monthly costs</li>
-        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Get clear next steps</li>
-        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Speak to an expert if you'd like guidance</li>
+        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Everything in one place</li>
+        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Clear rates, fees and savings</li>
+        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Explore at your own pace</li>
+        <li><span class="pc" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Expert help when you want it</li>
       </ul>
-      <a href="#journey" class="btn btn-teal">How it works
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#journey" class="btn btn-teal">How switching works
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <figure class="path-media reveal">
-      <img src="https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&amp;fit=crop&amp;q=70&amp;w=1000" srcset="https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&amp;fit=crop&amp;q=70&amp;w=600 600w, https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w, https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&amp;fit=crop&amp;q=70&amp;w=1500 1500w" sizes="(max-width:900px) 100vw, 560px" alt="A young couple carrying a moving box and a plant into their new home" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1758876022863-e86e6cb4ca86?auto=format&amp;fit=crop&amp;q=70&amp;w=1000" srcset="https://images.unsplash.com/photo-1758876022863-e86e6cb4ca86?auto=format&amp;fit=crop&amp;q=70&amp;w=600 600w, https://images.unsplash.com/photo-1758876022863-e86e6cb4ca86?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w, https://images.unsplash.com/photo-1758876022863-e86e6cb4ca86?auto=format&amp;fit=crop&amp;q=70&amp;w=1500 1500w" sizes="(max-width:900px) 100vw, 560px" alt="A couple sitting on their sofa going through a book of paperwork together" loading="lazy" decoding="async">
       <span class="path-badge"><span class="pb-dot" aria-hidden="true"></span>Free, no-obligation advice</span>
       <figcaption class="path-call">
         <span class="pc-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18M8 14h2M14 14h2M8 17.5h2"/></svg></span>
@@ -689,108 +698,51 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
 <section id="journey">
   <div class="wrap">
     <div class="journey-head reveal">
-      <h2>Your next steps, <em>made simple.</em></h2>
-      <p class="lead">Four steps from first question to front door.</p>
+      <h2>Your switch, <em>step by step.</em></h2>
+      <p class="lead">Four steps from a quick check to a lower rate.</p>
     </div>
     <ol class="journey">
       <li class="reveal">
         <a class="jcard" href="#calc">
-          <div class="jc-media"><img src="https://images.unsplash.com/photo-1758522490571-a0002f7377d6?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1758522490571-a0002f7377d6?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1758522490571-a0002f7377d6?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1758522490571-a0002f7377d6?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A couple relaxing on a bed, looking at a laptop together" loading="lazy" decoding="async"></div>
+          <div class="jc-media"><img src="https://images.unsplash.com/photo-1758522487963-1b193a2837fd?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1758522487963-1b193a2837fd?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1758522487963-1b193a2837fd?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1758522487963-1b193a2837fd?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A couple reviewing papers together in a bright kitchen" loading="lazy" decoding="async"></div>
           <div class="jc-body">
-            <h3>Check your eligibility</h3>
-            <p>Answer a few quick questions and see an indicative borrowing figure.</p>
+            <h3>Your details</h3>
+            <p>Answer a few quick questions about your current mortgage.</p>
           </div>
           <div class="jc-foot"><span>Start now</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
       </li>
       <li class="reveal">
-        <a class="jcard" href="https://mortgagestop.ie/apply">
-          <div class="jc-media"><img src="https://images.unsplash.com/photo-1713947505013-16bcf315e29f?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1713947505013-16bcf315e29f?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1713947505013-16bcf315e29f?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1713947505013-16bcf315e29f?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A man and woman at a table comparing options on a laptop" loading="lazy" decoding="async"></div>
+        <a class="jcard" href="#calc">
+          <div class="jc-media"><img src="https://images.unsplash.com/photo-1758523419091-b48deb56d7b9?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1758523419091-b48deb56d7b9?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1758523419091-b48deb56d7b9?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1758523419091-b48deb56d7b9?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A couple looking at a document together in their kitchen" loading="lazy" decoding="async"></div>
           <div class="jc-body">
-            <h3>Compare mortgage options</h3>
-            <p>See what leading lenders could offer you, side by side.</p>
+            <h3>See your options</h3>
+            <p>Compare the lenders you're likely to be eligible for.</p>
           </div>
-          <div class="jc-foot"><span>Compare lenders</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+          <div class="jc-foot"><span>Compare options</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </a>
+      </li>
+      <li class="reveal">
+        <a class="jcard" href="https://mortgagestop.ie/start-application">
+          <div class="jc-media"><img src="https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A couple reviewing a document together" loading="lazy" decoding="async"></div>
+          <div class="jc-body">
+            <h3>Your personalised results</h3>
+            <p>See your potential monthly and yearly savings.</p>
+          </div>
+          <div class="jc-foot"><span>See my results</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
       </li>
       <li class="reveal">
         <a class="jcard" href="tel:+353879646952">
-          <div class="jc-media"><img src="https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="An advisor talking through options with a couple at a table" loading="lazy" decoding="async"></div>
+          <div class="jc-media"><img src="https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1714974528757-f63c72154a1b?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="An advisor talking through options with clients" loading="lazy" decoding="async"></div>
           <div class="jc-body">
-            <h3>Get clear next steps</h3>
-            <p>An advisor talks you through the best fit and what you need for approval.</p>
+            <h3>Get expert support</h3>
+            <p>Speak to an advisor if you'd like guidance. It's optional.</p>
           </div>
           <div class="jc-foot"><span>Book a call</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
         </a>
       </li>
-      <li class="reveal">
-        <a class="jcard" href="https://mortgagestop.ie/buy-home">
-          <div class="jc-media"><img src="https://images.unsplash.com/photo-1744782351841-9cc6b86a5add?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1744782351841-9cc6b86a5add?auto=format&amp;fit=crop&amp;q=70&amp;w=420 420w, https://images.unsplash.com/photo-1744782351841-9cc6b86a5add?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1744782351841-9cc6b86a5add?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 300px" alt="A hand holding house keys on a house-shaped keyring" loading="lazy" decoding="async"></div>
-          <div class="jc-body">
-            <h3>Move forward with confidence</h3>
-            <p>We coordinate lender, valuation and solicitor so funds are ready on closing day.</p>
-          </div>
-          <div class="jc-foot"><span>Buying a home</span><span class="jc-go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
-        </a>
-      </li>
     </ol>
-  </div>
-</section>
-
-<section class="tst" id="reviews">
-  <div class="wrap">
-    <div class="tst-top reveal">
-      <h2>Reviews from real people</h2>
-      <p class="tst-rating"><b>4.5/5</b><span class="tst-tp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>Trustpilot</span><span>Based on 3,987 reviews</span></p>
-    </div>
-    <div class="tst-row">
-      <div class="tst-side reveal">
-        <svg class="tst-mark" width="64" height="56" viewBox="0 0 64 56" fill="none" aria-hidden="true"><path d="M8 4h16v20c0 14-6 24-18 28l-3-6c7-3 10-8 10-14H8V4Zm32 0h16v20c0 14-6 24-18 28l-3-6c7-3 10-8 10-14h-5V4Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
-        <h3>What our customers are saying</h3>
-        <div class="tst-ctrl">
-          <button type="button" class="tst-btn" id="tstPrev" aria-label="Previous reviews" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
-          <span class="tst-progress" aria-hidden="true"><span id="tstBar"></span></span>
-          <button type="button" class="tst-btn" id="tstNext" aria-label="Next reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </div>
-      </div>
-      <div class="tst-track" id="tstTrack" tabindex="0" role="region" aria-label="Customer reviews">
-        <figure class="tq">
-          <blockquote class="tq-bubble">
-            <p>Mortgage Stop made the whole process so straightforward. Within a week I had three lender options and a clear comparison of each — something I never could have done on my own. Genuinely impressed.</p>
-            <span class="tq-stars" role="img" aria-label="Rated 5 out of 5"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
-          </blockquote>
-          <figcaption><img class="tq-av" src="https://images.unsplash.com/photo-1605298046196-e205d0d699d7?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=70" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>Ryan Almeida</b><small>MortgageStop customer</small></span></figcaption>
-        </figure>
-        <figure class="tq">
-          <blockquote class="tq-bubble">
-            <p>As a first-time buyer I had no idea where to start. The AI assistant answered every question I had at midnight, and the advisor follow-up the next morning was brilliant. Can't recommend enough.</p>
-            <span class="tq-stars" role="img" aria-label="Rated 5 out of 5"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
-          </blockquote>
-          <figcaption><img class="tq-av" src="https://images.unsplash.com/photo-1623594675959-02360202d4d6?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=70" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>Blossom Menezes</b><small>MortgageStop customer</small></span></figcaption>
-        </figure>
-        <figure class="tq">
-          <blockquote class="tq-bubble">
-            <p>The step-by-step mortgage explanation made my first-time home buying experience so much clearer. Highly recommended for anyone looking to buy.</p>
-            <span class="tq-stars" role="img" aria-label="Rated 5 out of 5"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
-          </blockquote>
-          <figcaption><img class="tq-av" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=70" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>Sarah Jenkins</b><small>MortgageStop customer</small></span></figcaption>
-        </figure>
-        <figure class="tq">
-          <blockquote class="tq-bubble">
-            <p>I switched my mortgage and saved over €4,000 in the first year alone. The remortgage calculator was spot on and the process was handled in days, not weeks.</p>
-            <span class="tq-stars" role="img" aria-label="Rated 5 out of 5"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
-          </blockquote>
-          <figcaption><img class="tq-av" src="https://images.unsplash.com/photo-1753382834963-35cd88bf0c03?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=70" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>Jason Lee</b><small>MortgageStop customer</small></span></figcaption>
-        </figure>
-        <figure class="tq">
-          <blockquote class="tq-bubble">
-            <p>We thought switching lenders would be a nightmare—turns out, it was the smoothest part of buying our home. Incredible service.</p>
-            <span class="tq-stars" role="img" aria-label="Rated 5 out of 5"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>
-          </blockquote>
-          <figcaption><img class="tq-av" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=70" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>David Chen</b><small>MortgageStop customer</small></span></figcaption>
-        </figure>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -798,17 +750,17 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
   <div class="wrap faq2">
     <div class="faq2-head reveal">
       <h2>Questions? <em>Answered.</em></h2>
-      <p class="lead">The things first-time buyers ask us most.</p>
+      <p class="lead">The things homeowners ask us most about switching.</p>
       <a href="tel:+353879646952" class="btn btn-teal">Book a call</a>
-      <figure class="faq2-media"><img src="https://images.unsplash.com/photo-1758687125973-ec9932a4245b?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1758687125973-ec9932a4245b?auto=format&amp;fit=crop&amp;q=70&amp;w=480 480w, https://images.unsplash.com/photo-1758687125973-ec9932a4245b?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1758687125973-ec9932a4245b?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:900px) 100vw, 420px" alt="A smiling family of three sitting together on a sofa at home" loading="lazy" decoding="async"></figure>
+      <figure class="faq2-media"><img src="https://images.unsplash.com/photo-1758523669309-843b8ff89029?auto=format&amp;fit=crop&amp;q=70&amp;w=700" srcset="https://images.unsplash.com/photo-1758523669309-843b8ff89029?auto=format&amp;fit=crop&amp;q=70&amp;w=480 480w, https://images.unsplash.com/photo-1758523669309-843b8ff89029?auto=format&amp;fit=crop&amp;q=70&amp;w=700 700w, https://images.unsplash.com/photo-1758523669309-843b8ff89029?auto=format&amp;fit=crop&amp;q=70&amp;w=1000 1000w" sizes="(max-width:900px) 100vw, 420px" alt="A relaxed couple sitting by a bright window at home with a tablet" loading="lazy" decoding="async"></figure>
     </div>
     <div class="faq2-list reveal">
-        <div class="qa open"><button type="button" aria-expanded="true" aria-controls="faq-a1" id="faq-q1"><small>01</small>How much deposit do I need as a first-time buyer?</button><div class="ans" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>Most first-time buyers need a deposit of at least 10% of the purchase price. Gifts from family can count towards it, as long as they come with a signed gift letter.</p></div></div>
-        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><small>02</small>How much can I borrow?</button><div class="ans" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>Lenders usually allow first-time buyers to borrow up to 4 times their gross annual income, then check you can comfortably afford the repayments. Our calculator gives you an indicative figure in seconds.</p></div></div>
-        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><small>03</small>What is approval in principle, and how long does it last?</button><div class="ans" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>It's a lender's conditional agreement to lend you a set amount, based on your income and documents. It typically lasts around six months, and we can help you renew it if you haven't found a home yet.</p></div></div>
-        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><small>04</small>Can I use the Help to Buy scheme?</button><div class="ans" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>If you're buying or self-building a new home, you may be able to claim a tax refund towards your deposit through Help to Buy. Limits and conditions apply, so check Revenue's current rules and we'll factor it into your application.</p></div></div>
-        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><small>05</small>What documents will I need?</button><div class="ans" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>Usually your recent payslips, an employer's salary certificate, six months of bank and savings statements, photo ID and proof of address. We'll give you a checklist so nothing is missed.</p></div></div>
-        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><small>06</small>Will checking my eligibility affect my credit score?</button><div class="ans" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>No. Our quiz and calculator don't run a credit check, so you can explore your options freely.</p></div></div>
+        <div class="qa open"><button type="button" aria-expanded="true" aria-controls="faq-a1" id="faq-q1"><small>01</small>How do I know if switching makes sense for me?</button><div class="ans" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>If your fixed rate is ending, you're on a variable rate, or your home has gone up in value, switching could lower your repayments. The calculator gives you a first estimate and an advisor can confirm it.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><small>02</small>Will I have to pay a break fee?</button><div class="ans" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>If you're partway through a fixed-rate term, your lender may charge a break fee. We check this before you decide, so you can see whether switching still makes sense.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><small>03</small>What does switching cost?</button><div class="ans" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>Typical costs include legal fees and a property valuation. Some lenders offer cashback or a contribution towards legal fees. We set out the costs alongside your potential savings.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><small>04</small>How long does switching take?</button><div class="ans" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>Many switches take a few weeks from application to drawdown, depending on the lender and how quickly documents come in. We keep you updated at every step.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><small>05</small>Can I borrow extra when I switch?</button><div class="ans" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>Some lenders let you top up your mortgage, for example for home improvements, subject to their lending criteria. Mention it to your advisor if you're considering it.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><small>06</small>Will checking my savings affect my credit score?</button><div class="ans" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>No. Our calculator doesn't run a credit check, so you can explore your options freely.</p></div></div>
         <div class="qa"><button type="button" aria-expanded="false" aria-controls="faq-a7" id="faq-q7"><small>07</small>Do I pay anything for your help?</button><div class="ans" id="faq-a7" role="region" aria-labelledby="faq-q7"><p>No. Our service is free to you. We're paid by the lender only if and when your mortgage completes.</p></div></div>
     </div>
   </div>
@@ -816,15 +768,15 @@ footer.site .legal p>a[target]{font-weight:700;text-decoration:underline;text-de
 
 <div class="quiz reveal" id="quiz">
   <div class="quiz-copy">
-    <h2>Try our 4-minute <em>eligibility quiz</em></h2>
-    <p>See how much you could borrow, with each lender.</p>
+    <h2>Still on your lender's standard rate? <em>You could be paying more than you need to.</em></h2>
+    <p>Same home. A lower rate could mean more for what matters.</p>
     <div class="quiz-ctas">
-      <a href="https://mortgagestop.ie/apply" class="btn quiz-btn">Start the quiz <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#calc" class="btn quiz-btn">Check my savings <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a href="tel:+353879646952" class="btn btn-ghost quiz-alt"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18M8 14h2M14 14h2M8 17.5h2"/></svg>Book a call</a>
     </div>
   </div>
   <figure class="quiz-media">
-    <img src="https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" srcset="https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w, https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?auto=format&amp;fit=crop&amp;q=70&amp;w=1400 1400w, https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?auto=format&amp;fit=crop&amp;q=70&amp;w=2000 2000w, https://images.unsplash.com/photo-1709787627975-9cb37bbeca60?auto=format&amp;fit=crop&amp;q=70&amp;w=2600 2600w" sizes="100vw" alt="A young family sitting together on the front step of their house" loading="lazy" decoding="async">
+    <img src="https://images.unsplash.com/photo-1579678929710-862f8e01c0b2?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" srcset="https://images.unsplash.com/photo-1579678929710-862f8e01c0b2?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w, https://images.unsplash.com/photo-1579678929710-862f8e01c0b2?auto=format&amp;fit=crop&amp;q=70&amp;w=1400 1400w, https://images.unsplash.com/photo-1579678929710-862f8e01c0b2?auto=format&amp;fit=crop&amp;q=70&amp;w=2000 2000w, https://images.unsplash.com/photo-1579678929710-862f8e01c0b2?auto=format&amp;fit=crop&amp;q=70&amp;w=2600 2600w" sizes="100vw" alt="A row of brick houses on a quiet street at dusk" loading="lazy" decoding="async">
   </figure>
 </div>
 
@@ -891,29 +843,28 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 const yr=document.getElementById("yr");if(yr)yr.textContent=new Date().getFullYear();
 
-// first-time buyer borrowing calculator (indicative only)
-const calcForm=document.getElementById("calcForm");
-if(calcForm){
-  const MULT=4, RATE=0.035; // first-time buyer income multiple; illustrative rate
+// switching savings calculator (indicative only)
+const switchForm=document.getElementById("switchForm");
+if(switchForm){
+  const $=id=>document.getElementById(id);
   const eur=n=>"€"+Math.round(n).toLocaleString("en-IE");
   const num=el=>+String(el.value).replace(/[^\d]/g,"")||0;
-  const $=id=>document.getElementById(id);
+  const pct=el=>{const v=parseFloat(String(el.value).replace(",","."));return isFinite(v)&&v>=0?v:0};
+  const pay=(p,ratePct,yrs)=>{const n=yrs*12,r=ratePct/100/12;return r?p*r/(1-Math.pow(1+r,-n)):p/n};
   function update(){
-    const borrow=num($("income"))*MULT, dep=num($("deposit")), yrs=+$("term").value, m=RATE/12, n=yrs*12;
-    $("termOut").textContent=yrs+" yrs";
-    $("rMult").textContent=MULT;
-    $("rBorrow").textContent=eur(borrow);
-    const price=Math.min(borrow+dep, dep/0.1);
-    const loan=Math.max(price-dep,0);
-    $("rPrice").textContent=eur(price);
-    $("rMonthly").textContent=loan?eur(loan*m/(1-Math.pow(1+m,-n)))+"/mo":"–";
-    $("rNote").textContent=dep<(borrow+dep)*0.1
-      ? "Your deposit is the limit here. Lenders usually need 10% of the price, so saving more could raise your budget."
-      : "Repayment uses an illustrative "+(RATE*100).toFixed(1)+"% rate. Your advisor will confirm real lender offers.";
+    const p=num($("balance")),yrs=+$("years").value,cur=pct($("curRate")),nw=pct($("newRate"));
+    $("yearsOut").textContent=yrs+" yrs";
+    const a=pay(p,cur,yrs),b=pay(p,nw,yrs),save=a-b;
+    $("sCur").textContent=p?eur(a)+"/mo":"–";
+    $("sNew").textContent=p?eur(b)+"/mo":"–";
+    $("sMonthly").textContent=eur(Math.max(save,0));
+    $("sNote").textContent=!p?"Enter your mortgage balance to see an estimate."
+      : save>0?"That's about "+eur(save*12)+" a year, before any switching costs."
+      : "At these rates switching wouldn't lower your repayments. Try a lower rate, or talk to an advisor.";
   }
-  ["income","deposit"].forEach(id=>$(id).addEventListener("input",e=>{const n=num(e.target);e.target.value=n?n.toLocaleString("en-IE"):"";update()}));
-  $("term").addEventListener("input",update);
-  calcForm.addEventListener("submit",e=>e.preventDefault());
+  $("balance").addEventListener("input",e=>{const n=num(e.target);e.target.value=n?n.toLocaleString("en-IE"):"";update()});
+  ["curRate","newRate","years"].forEach(id=>$(id).addEventListener("input",update));
+  switchForm.addEventListener("submit",e=>e.preventDefault());
   update();
 }
 
